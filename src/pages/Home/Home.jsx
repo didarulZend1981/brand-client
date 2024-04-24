@@ -1,9 +1,10 @@
+import AddToCard from "../../components/AddToCard/AddToCard";
 
 
 const Home = () => {
   return (
     <div>
-      <h2>wellcome Home</h2>
+      <AddToCard></AddToCard>
     </div>
   );
 };
