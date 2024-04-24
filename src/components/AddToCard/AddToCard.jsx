@@ -1,5 +1,5 @@
 
-
+import Swal from 'sweetalert2'
 const AddToCard = () => {
   const handleAddToPost = event => {
     //  console.log("dddar");
@@ -29,14 +29,14 @@ const AddToCard = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data); // check data insert server
-                // if(data.insertedId){
-                //     Swal.fire({
-                //         title: 'Success!',
-                //         text: 'User Added Successfully',
-                //         icon: 'success',
-                //         confirmButtonText: 'Cool'
-                //       })
-                // }
+                if(data.insertedId){
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'User Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                      })
+                }
             })
 
 
